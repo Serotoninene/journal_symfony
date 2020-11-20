@@ -1,0 +1,23 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Accueil{% endblock title %}
+
+{% block body %}
+
+
+        <main >
+
+            <div class="mainTitles flex">
+                {% for article in articles %}
+                <h1>{{ article.title }}</h1>
+                {% endfor %}
+
+            </div>
+
+            <div class="mainPhoto flex">
+                <img src="{{ asset('assets/images/3Disland.jpg') }}" alt="3D Island">
+            </div>
+
+        </main>
+    </div>
+{% endblock body %}

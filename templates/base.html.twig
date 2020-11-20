@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %}{% endblock title %}</title>
+
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+</head>
+<body>
+<div class="container">
+    <navbar class="flex">
+
+        <div class="logo">
+            <img src="{{ asset('assets/images/logo.png')}}" alt="logo du journal" class="resp">
+        </div>
+
+        <ul class="navlinks flex">
+            <li><a href="#">Actualités</a></li>
+            <li><a href="#">Économie</a></li>
+            <li><a href="#">Culture</a></li>
+            <li><a href="#">Opinion</a></li>
+        </ul>
+
+    </navbar>
+
+        {% block body %}{% endblock body %}
+
+    <footer class="flex">
+        <div class="logo">
+            <img src="{{ asset('assets/images/logo.png')}}" alt="logo du journal" class="resp">
+        </div>
+    </footer>
+
+</body>
+</html>

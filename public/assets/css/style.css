@@ -1,0 +1,83 @@
+/*----- GLOBALS ------*/
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+body{
+    background-color: #F2F4ED;
+}
+
+/*------- FONCTIONS -----*/
+.flex{
+    display: flex;
+}
+
+.border{
+    border: 1px solid red;
+}
+
+.resp{
+    width: 100%;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+/*------- NAVBAR -----*/
+
+navbar{
+    align-items: center;
+    height: 70px;
+    justify-content: space-between;
+    border-bottom: 0.5px solid rgba(10,10,10,0.1);
+}
+
+.logo{
+    width: 100px
+}
+
+.navlinks{
+    width: 70%;
+    justify-content: space-between;
+}
+
+/*----- FOOTER -----*/
+footer{
+    justify-content: center;
+    align-items: center;
+    background-color: #B0413E;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+/*------------------------------- ACCUEIL ----------------------------------*/
+
+/*----- MAINTITLES ------*/
+
+.mainTitles{
+    margin: 100px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mainTitles h1{
+    font-size: 1.5em;
+    width: 30%;
+}
+
+/*----- PHOTO -------*/
+.mainPhoto{
+    justify-content: center;
+}
+
+/*------------------------------- ACTUALITES ----------------------------------*/
+
