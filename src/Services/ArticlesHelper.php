@@ -38,7 +38,13 @@
             ],
         ];
 
-        public function ArticlesHelper (){
+        public function AllArticles(){
+
+            return self::$articles;
+
+        }
+
+        public function LastArticles (){
 
             $lastarticles = array_slice(self::$articles, -3);
 
