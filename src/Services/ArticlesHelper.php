@@ -5,7 +5,7 @@
 
     class ArticlesHelper{
 
-        protected static $articles = [
+        public $articles = [
             [
                 'id' => 1,
                 'title' => 'Le gouvernement a trois mois pour prouver qu’il respecte ses engagements climatiques, une première en France',
@@ -38,15 +38,15 @@
             ],
         ];
 
-        public function AllArticles(){
+        public function allArticles(){
 
-            return self::$articles;
+            return $this->articles;
 
         }
 
-        public function LastArticles (){
+        public function lastArticles (){
 
-            $lastarticles = array_slice(self::$articles, -3);
+            $lastarticles = array_slice($this->articles, -3);
 
             return $lastarticles;
         }

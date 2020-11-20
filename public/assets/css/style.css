@@ -3,6 +3,8 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    box-sizing: border-box;
+
 }
 
 a{
@@ -85,22 +87,18 @@ footer{
     font-size: 1em;
 }
 
- .actualites article{
-     widht : 20vw;
-     margin: 20px 3px 3px 3px;
-     padding: 1px;
- }
-
 .ligne1{
     flex-wrap: wrap;
+
 }
 
 .ligne1 article{
-    width: 23vw;
+    width: 33.33%;
+    padding: 10px;
 }
 
 .ligne1 .imageArticle{
-    width : 23vw;
+    width: 100%;
 }
 
 /*------------------------------- ARTICLE ----------------------------------*/

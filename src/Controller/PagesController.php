@@ -17,7 +17,7 @@ class PagesController extends AbstractController
 
         $ArticlesHelper = new ArticlesHelper();
 
-        $lastArticles = $ArticlesHelper->LastArticles();
+        $lastArticles = $ArticlesHelper->lastArticles();
 
 
         return $this->render('accueil.html.twig',
@@ -32,7 +32,7 @@ class PagesController extends AbstractController
     public function actualites()
     {
         $ArticlesHelper = new ArticlesHelper();
-        $articles = $ArticlesHelper->AllArticles();
+        $articles = $ArticlesHelper->allArticles();
 
         return $this->render('actualites.html.twig',
         [
@@ -47,7 +47,7 @@ class PagesController extends AbstractController
     public function article($id){
 
         $ArticlesHelper = new ArticlesHelper();
-        $articles = $ArticlesHelper->AllArticles();
+        $articles = $ArticlesHelper->allArticles();
 
         $article = $articles[$id-1];
 
