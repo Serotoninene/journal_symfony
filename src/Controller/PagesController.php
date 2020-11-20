@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Services\ArticlesHelper;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
 
@@ -46,7 +47,8 @@ class PagesController extends AbstractController
      */
     public function accueil()
     {
-        $lastarticles = array_slice(self::ARTICLES, -3);
+        $ArticlesHelper = new ArticlesHelper();
+        $lastarticles = $ArticlesHelper->ArticlesHelper();
 
 
         return $this->render('accueil.html.twig',
