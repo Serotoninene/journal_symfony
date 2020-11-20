@@ -46,7 +46,8 @@ class PagesController extends AbstractController
      */
     public function accueil()
     {
-        $lastarticles = array_slice(self::ARTICLES, -3, -3);
+        $lastarticles = array_slice(self::ARTICLES, -3);
+
 
         return $this->render('accueil.html.twig',
             [

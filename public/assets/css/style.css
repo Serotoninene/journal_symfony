@@ -92,18 +92,15 @@ footer{
  }
 
 .ligne1{
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .ligne1 article{
-
+    width: 23vw;
 }
 
 .ligne1 .imageArticle{
-    width : 23vw;
-}
-
-.ligne2 .imageArticle{
     width : 23vw;
 }
 

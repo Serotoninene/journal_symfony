@@ -4,10 +4,10 @@
 
 {% block body %}
 
-    <section  class="actualites container">
+    <section  class="actualites container ">
 
-        <div class="ligne1 flex">
-        {% for article in articles|slice(0, 3)%}
+        <div class="ligne1 flex border">
+        {% for article in articles %}
 
             <article>
                 <div class="imageArticle resp">
@@ -20,7 +20,8 @@
         {% endfor %}
         </div>
 
-        <div class="ligne2 flex">
+
+{#      <div class="ligne2 flex">
         {% for article in articles|slice(3, 6)%}
 
             <article>
@@ -32,7 +33,7 @@
             </article>
 
         {% endfor %}
-        </div>
+        </div>#}
 
     </section>
 
