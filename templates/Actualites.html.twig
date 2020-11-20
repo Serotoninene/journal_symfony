@@ -4,7 +4,37 @@
 
 {% block body %}
 
+    <section  class="actualites container">
 
+        <div class="ligne1 flex">
+        {% for article in articles|slice(0, 3)%}
+
+            <article>
+                <div class="imageArticle resp">
+                    <img src="{{ article.image }}" alt="image de l'article" class="resp">
+                </div>
+
+                <h2><a href="{{ path("actualites_show", {"id" : article.id}) }}">{{ article.title }}</a></h2>
+            </article>
+
+        {% endfor %}
+        </div>
+
+        <div class="ligne2 flex">
+        {% for article in articles|slice(3, 6)%}
+
+            <article>
+                <div class="imageArticle resp">
+                    <img src="{{ article.image }}" alt="image de l'article" class="resp">
+                </div>
+
+                <h2><a href="{{ path("actualites_show", {"id" : article.id}) }}">{{ article.title }}</a></h2>
+            </article>
+
+        {% endfor %}
+        </div>
+
+    </section>
 
 
 

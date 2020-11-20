@@ -5,13 +5,12 @@
 {% block body %}
 
 
-        <main >
+        <main class="container">
 
             <div class="mainTitles flex">
-                {% for article in articles %}
+                {% for article in articles%}
                 <h1>{{ article.title }}</h1>
                 {% endfor %}
-
             </div>
 
             <div class="mainPhoto flex">
@@ -19,5 +18,4 @@
             </div>
 
         </main>
-    </div>
 {% endblock body %}

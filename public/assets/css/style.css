@@ -81,3 +81,44 @@ footer{
 
 /*------------------------------- ACTUALITES ----------------------------------*/
 
+ .actualites h2{
+    font-size: 1em;
+}
+
+ .actualites article{
+     widht : 20vw;
+     margin: 20px 3px 3px 3px;
+     padding: 1px;
+ }
+
+.ligne1{
+    justify-content: space-between;
+}
+
+.ligne1 article{
+
+}
+
+.ligne1 .imageArticle{
+    width : 23vw;
+}
+
+.ligne2 .imageArticle{
+    width : 23vw;
+}
+
+/*------------------------------- ARTICLE ----------------------------------*/
+.titreArticle{
+    text-align: center;
+    margin : 30px 0;
+}
+
+.imageArticle{
+    margin: auto;
+    width: 50vw;
+}
+
+.pArticle{
+    margin: 30px 0;
+    text-align: center;
+}

@@ -1,0 +1,19 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Article{% endblock %}
+
+{% block body %}
+
+<article id="article" class = "container">
+    
+    <h1 class="titreArticle">{{ article.title }}</h1>
+    
+    <div class="imageArticle flex">
+        <img src="{{ article.image }}" alt="" class="resp">
+    </div>
+
+    <p class="pArticle">{{ article.content }}</p>
+    
+</article>
+
+{% endblock body %}
