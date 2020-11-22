@@ -7,37 +7,27 @@
     <section  class="actualites container ">
 
         <div class="ligne1 flex">
+        {#je lance une boucle car mes données arrivent d'abord sous forme d'array, que je ne peux lire en twig
+        pour récupérer les strings qui les composent -> boucle#}
         {% for article in articles %}
 
+
+            {#Trop d'articles pour rentrer sur une seule ligne -> flex wrap = solution#}
             <article>
                 <div class="imageArticle resp">
                     <img src="{{ article.image }}" alt="image de l'article" class="resp">
                 </div>
 
+                {#Path() permet de faire référence au nom de la Route et non à l'url directement, bonne pratique,
+                permet de changer l'url sans devoir modifier toutes les pages twig
+                Ici, je renvoie à l'url "show article", composé d'une base et d'un "/{id}, l'id est une variable que je
+                renseigne ici en indiquant article.id#}
                 <h2><a href="{{ path("actualites_show", {"id" : article.id}) }}">{{ article.title }}</a></h2>
             </article>
 
         {% endfor %}
         </div>
 
-
-{#      <div class="ligne2 flex">
-        {% for article in articles|slice(3, 6)%}
-
-            <article>
-                <div class="imageArticle resp">
-                    <img src="{{ article.image }}" alt="image de l'article" class="resp">
-                </div>
-
-                <h2><a href="{{ path("actualites_show", {"id" : article.id}) }}">{{ article.title }}</a></h2>
-            </article>
-
-        {% endfor %}
-        </div>#}
-
     </section>
-
-
-
 
 {% endblock body %}

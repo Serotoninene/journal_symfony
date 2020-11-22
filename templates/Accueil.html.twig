@@ -8,14 +8,18 @@
         <main class="container">
 
             <div class="mainTitles flex">
+                {#Je récupère ma variable articles depuis la class PagesController#}
                 {% for article in articles%}
                 <h1>{{ article.title }}</h1>
                 {% endfor %}
             </div>
 
+            {#Pour qu'il n'y ait pas de problème de chemin, on renseigne celui de l'image avec la fonction asset,
+            qui fait débuter le chemin dans le dossier "public"#}
             <div class="mainPhoto flex">
                 <img src="{{ asset('assets/images/3Disland.jpg') }}" alt="3D Island">
             </div>
 
         </main>
+
 {% endblock body %}

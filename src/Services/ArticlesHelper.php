@@ -1,11 +1,17 @@
 <?php
-
     namespace App\Services;
+
+    /*Je crée ici une class custom pour traiter les données que j'extrait de ma base de donnée ou de mon API (en l'occurence
+    d'un simple tableau qui imite justement une base de donnée.
+    /!\ Bonne pratique : libérer le plus de place possible dans controller et rassembler tout ce qui y est superflux
+    (comme le traitement de données) dans une autre classe que tu mets dans le dossier Services.*/
 
 
     class ArticlesHelper{
 
-        public $articles = [
+        /*j'enregistre mes données dans une variable $article que je pourrai rappeler dans mes différentes méthodes*/
+
+        private $articles = [
             [
                 'id' => 1,
                 'title' => 'Le gouvernement a trois mois pour prouver qu’il respecte ses engagements climatiques, une première en France',
@@ -40,12 +46,14 @@
 
         public function allArticles(){
 
+            /*La première methode ne fait que renvoyer tout le contenu (bonne pratique)*/
             return $this->articles;
 
         }
 
         public function lastArticles (){
 
+            /*deuxième méthode utilise array_slice pour ne récupérer que les 3 derniers éléments du tableau*/
             $lastarticles = array_slice($this->articles, -3);
 
             return $lastarticles;

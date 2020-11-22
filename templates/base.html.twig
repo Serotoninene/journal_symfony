@@ -1,3 +1,8 @@
+{#La base correspond aux parties identiques à toutes les pages du site, ie. souvent le head, header et foote, on indique
+le nom et l'endroit de toutes les parties qui varieront à l'aide de "block", on peut mettre plusieurs blocks dans la
+mesure où chacun à un nom différent.
+/!\ ne pas oublier de fermer avec "endblock"#}
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -24,6 +29,7 @@
         </ul>
 
     </navbar>
+
 
         {% block body %}{% endblock body %}
 
