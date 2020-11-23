@@ -15,6 +15,7 @@ use Symfony\Component\Routing\Annotation\Route;
 /**
  * Ne pas oublier d'installer Symfony/Apache avant de tout lancer, sinon seul la route "/" fonctionnera, ce composer
  * sert à faire le lien entre le controller/les routes  et le serveur;
+ * /!\ extends = HERITAGE
  */
 class PagesController extends AbstractController
 {
