@@ -15,6 +15,15 @@ use Doctrine\ORM\Mapping as ORM;
  */
 
 /**
+ * Quand c'est bon, on rentre la ligne "php bin/console make:migration" dans la console pour créer un fichier dans migrations
+ * qui contient les requêtes SQL ...
+ * ... puis la ligne "php bin/console doctrine:migrations:migrate" qui met tout en ligne
+ *
+ * /!\ ATTENTION : avant de faire un "..make:migration" TOUJOURS faire un "..doctrine:migrations:migrate" pour éviter les
+ * répétitions de fichiers migration
+ */
+
+/**
  * @ORM\Entity(repositoryClass=BookRepository::class)
  */
 class Book
